@@ -166,12 +166,15 @@ $(_=>{
     $("#surveyContainer").removeClass('show').remove()
     $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
     if(survey.data.question4 == "item1")
-      $("#resultBody").text("Well I'm sure you would be supportive of the GMO's when you look at these facts: *facts*")
+      $("#resultBody").text("Since you strongly disagree with the use of GMOs, we would like to show you some facts and try to show you our point of view on GMOs")
+      $("#resultBody").append("<img src='images/impact-of-biotech_0.png' class='img-fluid' />")
     if(survey.data.question4 == "item2")
-      $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that ____")
+      $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that GMOs are indeed good for us.")
     if(survey.data.question4 == "item3")
-      $("#resultBody").text("Well I'm sure you wouldn't be as supportive of the GMO's when you look at these facts: *facts*")
+      $("#resultBody").text("Great! You support GMO's too, here's a cookie.")
+      $("#resultBody").append("<img src='images/cookie.png' class='img-fluid' />")
     $('#result').addClass('show')
+    
   }
 
   var survey = new Survey.Model(surveyJSON)
