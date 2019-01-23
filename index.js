@@ -171,8 +171,8 @@ $(_=>{
     if(survey.data.question4 == "item2")
       $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that GMOs are indeed good for us.")
     if(survey.data.question4 == "item3")
-      $("#resultBody").text("Great! You support GMO's too, here's a cookie.")
-      $("#resultBody").append("<img src='images/cookie.png' class='img-fluid' />")
+      $("#resultBody").text("Great! You support GMO's too, here's a cookie for you: ")
+      $("#resultBody").append("<img src='images/cookie.png' width='100px' class='img-fluid' />")
     $('#result').addClass('show')
     
   }
