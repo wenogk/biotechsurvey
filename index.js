@@ -163,6 +163,7 @@ $(_=>{
   }
   let space = survey=>{$("#resultBody").append("<br/><br/>");}
   let surveyResult = survey=>{
+    alert(survey.data);
     $("#surveyContainer").removeClass('show').remove()
     $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
     if(survey.data.question4 == "item1"){
@@ -208,7 +209,7 @@ $(_=>{
     }
     if(survey.data.question3=="6") {
       space();
-      $("#resultBody").append("Pretty much the only place in the world where GM crops aren't grown is where you are, but don't forget the GM produced products. Must be pretty cold at Antarctica!");
+      $("#resultBody").append("Pretty much the only place in the world where GM crops aren't grown is where you are, but don't forget the GM produced products. Must be pretty cold there!");
     }
     if(survey.data.question5=="item1") {
       space();
