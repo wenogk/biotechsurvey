@@ -70,7 +70,7 @@ $(_=>{
         elements: [{
             type: "radiogroup",
             name: "question4",
-            title: "Do you support GMO's",
+            title: "Do you support GMO's?",
             choices: [{
                 value: "item1",
                 text: "Not at all"
