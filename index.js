@@ -170,9 +170,10 @@ $(_=>{
       $("#resultBody").append("<img src='images/impact-of-biotech_0.png' class='img-fluid' />")
     if(survey.data.question4 == "item2")
       $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that GMOs are indeed good for us. Here's a cookie till then:")
-    if(survey.data.question4 == "item3")
+    if(survey.data.question4 == "item3"){
       $("#resultBody").text("Great! You support GMO's too, here's a cookie for you: ")
       $("#resultBody").append("<img src='images/cookie.png' width='100px' class='img-fluid' /><br />")
+    }
     $('#result').addClass('show')
     
   }
