@@ -16,28 +16,28 @@ $(_=>{
             title: "Age",
             isRequired: true,
             choices: [{
-                value: "item1",
-                text: "5-13"
+                value: "0",
+                text: "13 or younger"
             }, {
-                value: "item2",
+                value: "1",
                 text: "13-18"
             }, {
-                value: "item3",
+                value: "2",
                 text: "18-25"
             }, {
-                value: "item4",
+                value: "3",
                 text: "25-35"
             }, {
-                value: "item5",
+                value: "4",
                 text: "35-45"
             }, {
-                value: "item6",
+                value: "5",
                 text: "45-55"
             }, {
-                value: "item7",
+                value: "6",
                 text: "55-65"
             }, {
-                value: "item8",
+                value: "7",
                 text: "65+"
             }]
         }, {
