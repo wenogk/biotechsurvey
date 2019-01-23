@@ -262,7 +262,17 @@ $(_=>{
       space();
       $("#resultBody").append("Although you can argue that Farmer's have disputes with cooperations due to issues like terminator seeds and them requiring to keep buying seeds annually, Farmers indeed have advantages through GMO's. \n Some GMOs help farmers reduce the carbon footprint of crops. Every time farmers have to go back into the field, such as to plow or apply pesticides, we are burning fossil fuels. Round-Up Ready GMO crops make weed control much easier and reduces the number of time farmers have to spray herbicides. Those crops also allow farmers to adopt practices to sequester carbon, such as no-till and cover crops. On our farm, we have not sprayed insecticide even once since adopting the Bt trait into our corn. All of that lowers the carbon footprint of crops and is better for our planet.");
     }
-
+    //sH4bi60alZU
+    if(survey.data.question4 == "item1"){
+      $("#resultBody").text("Finally, since you strongly disagree with the use of GMOs, watch this scishow video to clear all doubts: ")
+      space();
+      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
+   }
+   if(survey.data.question4 == "item2"){
+      $("#resultBody").text("Finally, since you are in the middle-ground of the use of GMOs, watch this scishow video to clear all doubts: ")
+      space();
+      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
+   }
     $('#result').addClass('show')
   }
 
