@@ -3,21 +3,27 @@
   <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://surveyjs.azureedge.net/1.0.64/survey.css" type="text/css" rel="stylesheet"/>
-    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <title>Biotech Survey Demo</title>
+
+    <link href="https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
 
   </head>
   <body>
 
-    <div id="surveyContainer"></div>
-    <div class="resultBox">
-       <div id="resultContainer1"></div>
-       <div id="resultContainer2"></div>
+    <div class="container">
+      <div id="surveyContainer"></div>
+      <div class="resultBox">
+         <div id="resultContainer1"></div>
+         <div id="resultContainer2"></div>
+      </div>
     </div>
 
-    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.1.0/dist/js/bootstrap.js"></script>
     <script src="https://surveyjs.azureedge.net/1.0.64/survey.jquery.js"></script>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 
   </body>
 </html>

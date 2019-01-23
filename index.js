@@ -1,4 +1,7 @@
-let surveyStart = _=>{
+$(_=>{
+
+  Survey.StylesManager.applyTheme('bootstrap')
+
   var surveyJSON = {
     pages: [{
       name: "page1",
@@ -78,24 +81,21 @@ let surveyStart = _=>{
       }]
     }]
   }
+
   let surveyResult = survey=>{
-    $("#surveyContainer").remove();
-    $("#resultContainer1").text(survey.data.question1 + ", thank you for your participation in our survey.");
-    if (survey.data.question4 == "item1") {
-      $("#resultContainer2").text("Well I'm sure you would be supportive of the GMO's when you look at these facts: *facts*");
-    }
-    if (survey.data.question4 == "item2") {
-      $("#resultContainer2").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that ____");
-    }
-    if (survey.data.question4 == "item3") {
-      $("#resultContainer2").text("Well I'm sure you wouldn't be as supportive of the GMO's when you look at these facts: *facts*");
-    }
+    $("#surveyContainer").remove()
+    $("#resultContainer1").text(survey.data.question1 + ", thank you for your participation in our survey.")
+    if(survey.data.question4 == "item1")
+      $("#resultContainer2").text("Well I'm sure you would be supportive of the GMO's when you look at these facts: *facts*")
+    if(survey.data.question4 == "item2")
+      $("#resultContainer2").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that ____")
+    if(survey.data.question4 == "item3")
+      $("#resultContainer2").text("Well I'm sure you wouldn't be as supportive of the GMO's when you look at these facts: *facts*")
   }
-  var survey = new Survey.Model(surveyJSON);
+
+  var survey = new Survey.Model(surveyJSON)
   $("#surveyContainer").Survey({
     model: survey,
     onComplete: surveyResult
-  });
-}
-
-onload = surveyStart
+  })
+})
