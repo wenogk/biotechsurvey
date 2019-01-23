@@ -210,6 +210,9 @@ $(_=>{
       space();
       $("#resultBody").append("Pretty much the only place in the world where GM crops aren't grown is where you are, but don't forget the GM produced products. Must be pretty cold there!");
     }
+    var fontSize = parseInt($("#resultBody").css("font-size"));
+    fontSize = fontSize + survey.data.question2*2 + "px";
+    $("#resultBody").css({'font-size':fontSize});
     if(survey.data.question2==0) {
       //<img src="..." class="img-fluid" alt="Responsive image">
       //alert("kid");
