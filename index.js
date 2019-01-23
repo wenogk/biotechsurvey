@@ -217,7 +217,8 @@ $(_=>{
       //<img src="..." class="img-fluid" alt="Responsive image">
       //alert("kid");
       $(".bg-primary").attr('class', 'bg-warning');
-      $("#resultBody").append("<img src='images/snacks.jpg' width='100px' class='img-fluid' /><br />")
+      space();
+      $("#resultBody").append("<img src='images/snacks.jpg' class='img-fluid' /><br />")
     }
     if(survey.data.question5=="item1") {
       space();
@@ -230,6 +231,10 @@ $(_=>{
     if(survey.data.question6.length!=4) {
       space();
       $("#resultBody").append("All of the images we asked you to select from could have been GMO produced.");
+    }
+    if(survey.data.question2==0) {
+      space();
+      $("#resultBody").append("<img src='images/golden.jpg' class='img-fluid' /><br />")
     }
     if(survey.data.question7=="item1") {
       space();
