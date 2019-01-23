@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biotech Survey Demo</title>
 
-    <link href="https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body class='bg-primary'>
 
-    <div class="container">
-      <div id="surveyContainer"></div>
-      <div class="resultBox">
-         <div id="resultContainer1"></div>
-         <div id="resultContainer2"></div>
+    <div class="container v-100">
+      <div class="col-12 h-100 d-flex align-items-center justify-content-center">
+        <div id="surveyContainer" class='card fade'></div>
+        <div id="result" class='card fade'>
+          <div id="resultHeader" class='card-header h1'></div>
+          <div id="resultBody" class='card-body'></div>
+        </div>
       </div>
     </div>
 

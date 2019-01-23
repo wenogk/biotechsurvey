@@ -1,6 +1,7 @@
 $(_=>{
 
   Survey.StylesManager.applyTheme('bootstrap')
+
   var surveyJSON = {
     pages: [{
         name: "page1",
@@ -36,11 +37,11 @@ $(_=>{
             }, {
                 value: "item8",
                 text: "65+"
-            }, "item9"]
+            }]
         }, {
             type: "dropdown",
             name: "question3",
-            title: "What part of the world do you come from",
+            title: "What part of the world do you come from?",
             choices: [{
                 value: "item1",
                 text: "Asia"
@@ -97,6 +98,7 @@ $(_=>{
         elements: [{
             type: "imagepicker",
             name: "question6",
+            title: "",
             choices: [{
                 value: "1",
                 imageLink: "images/g1.jpg"
@@ -148,22 +150,30 @@ $(_=>{
             }]
         }]
     }]
-}
+  }
 
   let surveyResult = survey=>{
-    $("#surveyContainer").remove()
-    $("#resultContainer1").text(survey.data.question1 + ", thank you for your participation in our survey.")
+    $("#surveyContainer").removeClass('show').remove()
+    $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
     if(survey.data.question4 == "item1")
-      $("#resultContainer2").text("Well I'm sure you would be supportive of the GMO's when you look at these facts: *facts*")
+      $("#resultBody").text("Well I'm sure you would be supportive of the GMO's when you look at these facts: *facts*")
     if(survey.data.question4 == "item2")
-      $("#resultContainer2").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that ____")
+      $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that ____")
     if(survey.data.question4 == "item3")
-      $("#resultContainer2").text("Well I'm sure you wouldn't be as supportive of the GMO's when you look at these facts: *facts*")
+      $("#resultBody").text("Well I'm sure you wouldn't be as supportive of the GMO's when you look at these facts: *facts*")
+    $('#result').addClass('show')
   }
 
   var survey = new Survey.Model(surveyJSON)
   $("#surveyContainer").Survey({
     model: survey,
+    css:{
+      navigation:{
+        next:'btn btn-primary sv_next_btn',
+        prev:'btn btn-warning sv_next_btn',
+        complete:'btn btn-success sv_next_btn'
+      }
+    },
     onComplete: surveyResult
-  })
+  }).addClass('show')
 })
