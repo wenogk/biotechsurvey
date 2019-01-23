@@ -8,11 +8,13 @@ $(_=>{
         elements: [{
             type: "text",
             name: "question1",
-            title: "Name"
+            title: "Name",
+            isRequired: true
         }, {
             type: "dropdown",
             name: "question2",
             title: "Age",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "5-13"
@@ -42,6 +44,7 @@ $(_=>{
             type: "dropdown",
             name: "question3",
             title: "What part of the world do you come from?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Asia"
@@ -71,6 +74,7 @@ $(_=>{
             type: "radiogroup",
             name: "question4",
             title: "Do you support GMOs?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Not at all"
@@ -85,6 +89,7 @@ $(_=>{
             type: "radiogroup",
             name: "question5",
             title: "Have you ever had a GMO produced product?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Yes"
@@ -98,7 +103,9 @@ $(_=>{
         elements: [{
             type: "imagepicker",
             name: "question6",
-            title: "Which of these pictures of fruits do you think are GMO products?",
+            title: "Which of these items in the pictures could be a GMO product?",
+            isRequired: true,
+            multiSelect: true,
             choices: [{
                 value: "1",
                 imageLink: "images/g1.jpg"
@@ -119,6 +126,7 @@ $(_=>{
             type: "radiogroup",
             name: "question7",
             title: "Do you think there are health benefits associated with GMOs?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Yes"
@@ -130,6 +138,7 @@ $(_=>{
             type: "radiogroup",
             name: "question8",
             title: "Do you think the regulations in place for GMOs are satisfactory?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Yes"
@@ -141,6 +150,7 @@ $(_=>{
             type: "radiogroup",
             name: "question9",
             title: "Do you think GMOs and the companies that produce it support farmers?",
+            isRequired: true,
             choices: [{
                 value: "item1",
                 text: "Yes"
@@ -170,9 +180,9 @@ $(_=>{
     showProgressBar:'top',
     css:{
       navigation:{
-        next:'btn btn-lg btn-primary sv_next_btn',
-        prev:'btn btn-lg btn-warning sv_next_btn',
-        complete:'btn btn-lg btn-success sv_next_btn'
+        next:'btn btn-lg btn-primary',
+        prev:'btn btn-lg btn-warning',
+        complete:'btn btn-lg btn-success'
       }
     },
     onComplete: surveyResult
