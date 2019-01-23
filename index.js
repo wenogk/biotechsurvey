@@ -104,7 +104,6 @@ $(_=>{
             type: "imagepicker",
             name: "question6",
             title: "Which of these items in the pictures could be a GMO product?",
-            isRequired: true,
             multiSelect: true,
             choices: [{
                 value: "1",
