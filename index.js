@@ -223,11 +223,11 @@ $(_=>{
     }
     if(survey.data.question5=="item1") {
       space();
-      $("#resultBody").append("You're right, your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
+      $("#resultBody").append("You're right, you've probably used a GMO product. Your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
     }
     if(survey.data.question5=="item2") {
       space();
-      $("#resultBody").append("Everyone at one point has had a GMO produced product. Your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
+      $("#resultBody").append("Everyone at one point has used a GMO produced product. Your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
     }
     if(!survey.data.question6 || survey.data.question6.length<4) {
       space();
