@@ -46,25 +46,25 @@ $(_=>{
             title: "What part of the world do you come from?",
             isRequired: true,
             choices: [{
-                value: "item1",
+                value: "0",
                 text: "Asia"
             }, {
-                value: "item2",
+                value: "1",
                 text: "Africa"
             }, {
-                value: "item3",
+                value: "2",
                 text: "Australia"
             }, {
-                value: "item4",
+                value: "3",
                 text: "North America"
             }, {
-                value: "item5",
+                value: "4",
                 text: "South America"
             }, {
-                value: "item6",
+                value: "5",
                 text: "Europe"
             }, {
-                value: "item7",
+                value: "6",
                 text: "Antarctica"
             }]
         }]
@@ -161,7 +161,7 @@ $(_=>{
         }]
     }]
   }
-
+  let space = survey=>{$("#resultBody").append("<br/><br/>");}
   let surveyResult = survey=>{
     $("#surveyContainer").removeClass('show').remove()
     $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
@@ -182,6 +182,11 @@ $(_=>{
          $("#resultBody").append("Watch this video that may give you an even better insight on why GMOs aren't bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div><br/><br />");
       }
     }
+    if(survey.data.question3=="0") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
+    }
+
     $('#result').addClass('show')
   }
 
