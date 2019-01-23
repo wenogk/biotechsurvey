@@ -172,8 +172,8 @@ $(_=>{
     }
     if(survey.data.question4 == "item2") {
       $("#resultBody").text("Well that's a smart position to be in, let's look at some statistics of GMO's to see if we can convince you that GMOs are indeed good for us. ")
-      $("#resultBody").append("<img src='images/impact-of-biotech_0.png' class='img-fluid' /><br />")
-      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div><br/>");
+      $("#resultBody").append("<img src='images/impact-of-biotech_0.png' class='img-fluid' /><br /><br />")
+      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div><br/><br />");
    
     }
     if(survey.data.question4 == "item3"){
