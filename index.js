@@ -222,7 +222,30 @@ $(_=>{
       space();
       $("#resultBody").append("All of the images we asked you to select from could have been GMO produced.");
     }
-
+    if(survey.data.question7=="item1") {
+      space();
+      $("#resultBody").append("You're right, some GMO produced foods have been made to have greater nutritional value. There are products that would provide real health benefits, for example one is Golden Rice, a rice that is fortified with vitamin A, and SDA oil. SDA is an oil that will allow plant-based omega-3 fatty acids in the oil to be available to the body for use more efficiently.");
+    }
+     if(survey.data.question7=="item2") {
+      space();
+      $("#resultBody").append("There are products that would provide real health benefits, for example one is Golden Rice, a rice that is fortified with vitamin A, and SDA oil. SDA is an oil that will allow plant-based omega-3 fatty acids in the oil to be available to the body for use more efficiently.");
+    }
+    if(survey.data.question8=="item1") {
+      space();
+      $("#resultBody").append("One could say that the regulations in place for GMO products are satisfactory however there is always room for improvement. The products need immense research and trials before they come out to the market and this needs good policy makers and systems in place.");
+    }
+    if(survey.data.question8=="item2") {
+      space();
+      $("#resultBody").append("You're right, regulations on GMOs have to be improved. We feel that consumers deserve the right to know if their products are GMO produced. The products need immense research and trials before they come out to the market and this needs good policy makers and systems in place.");
+    }
+    if(survey.data.question9=="item1") {
+      space();
+      $("#resultBody").append("Farmers indeed have advantages through GMO's. \n Some GMOs help farmers reduce the carbon footprint of crops. Every time farmers have to go back into the field, such as to plow or apply pesticides, we are burning fossil fuels. Round-Up Ready GMO crops make weed control much easier and reduces the number of time farmers have to spray herbicides. Those crops also allow farmers to adopt practices to sequester carbon, such as no-till and cover crops. On our farm, we have not sprayed insecticide even once since adopting the Bt trait into our corn. All of that lowers the carbon footprint of crops and is better for our planet.");
+    }
+    if(survey.data.question9=="item2") {
+      space();
+      $("#resultBody").append("Although you can argue that Farmer's have disputes with cooperations due to issues like terminator seeds and them requiring to keep buying seeds annually, Farmers indeed have advantages through GMO's. \n Some GMOs help farmers reduce the carbon footprint of crops. Every time farmers have to go back into the field, such as to plow or apply pesticides, we are burning fossil fuels. Round-Up Ready GMO crops make weed control much easier and reduces the number of time farmers have to spray herbicides. Those crops also allow farmers to adopt practices to sequester carbon, such as no-till and cover crops. On our farm, we have not sprayed insecticide even once since adopting the Bt trait into our corn. All of that lowers the carbon footprint of crops and is better for our planet.");
+    }
 
     $('#result').addClass('show')
   }
