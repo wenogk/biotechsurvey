@@ -179,13 +179,39 @@ $(_=>{
       $("#resultBody").text("Great! You support GMO's too, here's a cookie for you: ")
       $("#resultBody").append("<img src='images/cookie.png' width='100px' class='img-fluid' /><br />")
       if(survey.data.question2<=2) {
-         $("#resultBody").append("Watch this video that may give you an even better insight on why GMOs aren't bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div><br/><br />");
+         $("#resultBody").append("Watch this video that may give you an even better insight on why GMOs aren't bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div>");
       }
     }
     if(survey.data.question3=="0") {
       space();
       $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
     }
+    if(survey.data.question3=="1") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Africa'>Wikipedia</a>,Genetically modified (GM) crops have been commercially cultivated in four African countries; South Africa, Burkina Faso, Egypt and Sudan. Beginning in 1998, South Africa is the major grower of GM crops, with Burkina Faso and Egypt starting in 2008. Sudan grew GM cotton in 2012. Other countries, with the aid of international governments and foundation, are conducting trials and research on crops important for Africa.Crops under research for use in Africa include cotton, maize, cassava, cowpea, sorgum, potato, banana, sweet potato, sugar cane, coconut, squash and grape. As well as disease, insect and virus resistance some of the research projects focus on traits particularly crucial for Africa like drought resistance and biofortification.");
+    }
+    if(survey.data.question3=="2") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
+    }
+    if(survey.data.question3=="3") {
+      space();
+      $("#resultBody").append("According to <a href='https://www.choice.com.au/food-and-drink/food-warnings-and-safety/food-safety/articles/are-you-eating-gm-food#2%20what%20GM%20foods%20are%20grown%20in%20australia?'>Choice</a>, There are only two commercial GM broad-acre crops grown in Australia – GM cotton and GM canola. These are both found in many margarines and frying oils. More than 99% of planted cotton in Australia is GM. There are three types of GM cotton in use and all are owned by Bayer or Monsanto, which are on the brink of merging. Two of these cottons are herbicide-tolerant to help the control of weeds, and the other has an inbuilt resistance to a pest, reducing the need for insecticides. There are six types of GM canola licenced for use in Australia. All have been developed to be resistant to the herbicides used to control weeds. Five of these are owned by Bayer or Monsanto. Other GM crops being developed and trialled around the country (but not yet commercially available) include sugarcane, safflower, banana, wheat, barley and white clover. There are no GM animals or fish being grown or raised for food in Australia; however, meat, dairy and eggs from animals fed imported GM feedstock are available to consumers in Australia.");
+    }
+    if(survey.data.question3=="4") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
+    }
+    if(survey.data.question3=="5") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
+    }
+    if(survey.data.question3=="6") {
+      space();
+      $("#resultBody").append("According to <a href='https://en.wikipedia.org/wiki/Genetically_modified_food_in_Asia'>Wikipedia</a>, India and China are the two largest producers of genetically modified products in Asia. India currently only grows GM cotton, while China produces GM varieties of cotton, poplar, petunia, tomato, papaya and sweet pepper. Cost of enforcement of regulations in India are generally higher, possibly due to the greater influence farmers and small seed firms have on policy makers, while the enforcement of regulations was more effective in China. Other Asian countries that grew GM crops in 2011 were Pakistan, the Philippines and Myanmar. GM crops were approved for commercialisation in Bangladesh in 2013 and in Vietnam and Indonesia in 2014.");
+    }
+    
+
 
     $('#result').addClass('show')
   }
