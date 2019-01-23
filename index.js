@@ -178,7 +178,7 @@ $(_=>{
     if(survey.data.question4 == "item3"){
       $("#resultBody").text("Great! You support GMO's too, here's a cookie for you: ")
       $("#resultBody").append("<img src='images/cookie.png' width='100px' class='img-fluid' /><br />")
-      if(surver.data.question2<=2) {
+      if(survey.data.question2<=2) {
          $("#resultBody").append("Watch this video that may give you an even better insight on why GMOs aren't bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/7TmcXYp8xu4?controls=0&rel=0' allowfullscreen></iframe></div><br/><br />");
       }
     }
