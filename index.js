@@ -264,14 +264,16 @@ $(_=>{
     }
     //sH4bi60alZU
     if(survey.data.question4 == "item1"){
+      space();
       $("#resultBody").append("Finally, since you strongly disagree with the use of GMOs, watch this scishow video to clear all doubts: ")
       space();
-      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
+      $("#resultBody").append("<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
    }
    if(survey.data.question4 == "item2"){
+    space();
       $("#resultBody").append("Finally, since you are in the middle-ground of the use of GMOs, watch this scishow video to clear all doubts: ")
       space();
-      $("#resultBody").append("Watch this video that weighs in on whether GMOs are good or bad:<br /><br /><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
+      $("#resultBody").append("<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
    }
     $('#result').addClass('show')
   }
