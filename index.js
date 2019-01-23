@@ -111,43 +111,6 @@ var surveyJSON = {
                 imageLink: "images/g4.jpg"
             }]
         }]
-    }],
-    {
-        name: "page4",
-        elements: [{
-            type: "radiogroup",
-            name: "question7",
-            title: "Do you think there are health benefits associated with GMOs?",
-            choices: [{
-                value: "item1",
-                text: "Yes"
-            }, {
-                value: "item2",
-                text: "No"
-            }]
-        }, {
-            type: "radiogroup",
-            name: "question8",
-            title: "Do you think the regulations in place for GMOs are satisfactory?",
-            choices: [{
-                value: "item1",
-                text: "Yes"
-            }, {
-                value: "item2",
-                text: "No"
-            }]
-        }, {
-            type: "radiogroup",
-            name: "question9",
-            title: "Do you think GMOs and the companies that produce it support farmers?",
-            choices: [{
-                value: "item1",
-                text: "Yes"
-            }, {
-                value: "item2",
-                text: "No"
-            }]
-        }]
     }]
 }
 
