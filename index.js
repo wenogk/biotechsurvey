@@ -212,6 +212,8 @@ $(_=>{
     }
     if(survey.data.question2==0) {
       //<img src="..." class="img-fluid" alt="Responsive image">
+      //alert("kid");
+      $(".bg-primary").attr('class', 'bg-warning');
       $("#resultBody").append("<img src='images/snacks.jpg' width='100px' class='img-fluid' /><br />")
     }
     if(survey.data.question5=="item1") {
