@@ -210,6 +210,10 @@ $(_=>{
       space();
       $("#resultBody").append("Pretty much the only place in the world where GM crops aren't grown is where you are, but don't forget the GM produced products. Must be pretty cold there!");
     }
+    if(survey.data.question2==0) {
+      //<img src="..." class="img-fluid" alt="Responsive image">
+      $("#resultBody").append("<img src='images/snacks.jpg' width='100px' class='img-fluid' /><br />")
+    }
     if(survey.data.question5=="item1") {
       space();
       $("#resultBody").append("You're right, your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
