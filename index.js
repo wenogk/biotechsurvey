@@ -17,7 +17,7 @@ $(_=>{
             isRequired: true,
             choices: [{
                 value: "0",
-                text: "13 or younger"
+                text: "Below 13"
             }, {
                 value: "1",
                 text: "13-18"
@@ -38,7 +38,7 @@ $(_=>{
                 text: "55-65"
             }, {
                 value: "7",
-                text: "65+"
+                text: "Above 65"
             }]
         }, {
             type: "dropdown",
