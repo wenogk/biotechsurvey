@@ -163,7 +163,6 @@ $(_=>{
   }
   let space = survey=>{$("#resultBody").append("<br/><br/>");}
   let surveyResult = survey=>{
-    alert(survey.data);
     $("#surveyContainer").removeClass('show').remove()
     $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
     if(survey.data.question4 == "item1"){
@@ -218,6 +217,10 @@ $(_=>{
     if(survey.data.question5=="item2") {
       space();
       $("#resultBody").append("Everyone at one point has had a GMO produced product. Your doritos are GMO produced and according to USNews, \"Soda isn't exactly the first product people think of when they are trying to avoid GMOs. But these sugary drinks are very likely to include GMOs since they contain high fructose corn syrup, which includes corn as an ingredient. Most corn is genetically engineered, with genetically modified corn accounting for 88 percent of the corn planted in 2012, the FDA said. Other products containing high fructose corn syrup include juice drinks, certain breads and crackers. \"");
+    }
+    if(survey.data.question6.length!=4) {
+      space();
+      $("#resultBody").append("All of the images we asked you to select from could have been GMO produced.");
     }
 
 
