@@ -70,7 +70,7 @@ $(_=>{
         elements: [{
             type: "radiogroup",
             name: "question4",
-            title: "Do you support GMO's?",
+            title: "Do you support GMOs?",
             choices: [{
                 value: "item1",
                 text: "Not at all"
@@ -98,7 +98,7 @@ $(_=>{
         elements: [{
             type: "imagepicker",
             name: "question6",
-            title: "",
+            title: "Which of these pictures of fruits do you think are GMO products?",
             choices: [{
                 value: "1",
                 imageLink: "images/g1.jpg"
