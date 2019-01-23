@@ -178,7 +178,6 @@ $(_=>{
       $("#resultBody").append("<img src='images/cookie.png' width='100px' class='img-fluid' /><br />")
     }
     $('#result').addClass('show')
-    
   }
 
   var survey = new Survey.Model(surveyJSON)
