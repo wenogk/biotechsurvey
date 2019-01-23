@@ -167,11 +167,12 @@ $(_=>{
   var survey = new Survey.Model(surveyJSON)
   $("#surveyContainer").Survey({
     model: survey,
+    showProgressBar:'top',
     css:{
       navigation:{
-        next:'btn btn-primary sv_next_btn',
-        prev:'btn btn-warning sv_next_btn',
-        complete:'btn btn-success sv_next_btn'
+        next:'btn btn-lg btn-primary sv_next_btn',
+        prev:'btn btn-lg btn-warning sv_next_btn',
+        complete:'btn btn-lg btn-success sv_next_btn'
       }
     },
     onComplete: surveyResult
