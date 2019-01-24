@@ -162,6 +162,7 @@ $(_=>{
   }
   let space = survey=>{$("#resultBody").append("<br/><br/>");}
   let surveyResult = survey=>{
+    $("#ytWidget").remove();
     $("#surveyContainer").removeClass('show').remove()
     $("#resultHeader").text(survey.data.question1 + ", thank you for your participation in our survey.")
     if(survey.data.question4 == "item1"){
@@ -274,6 +275,7 @@ $(_=>{
       space();
       $("#resultBody").append("<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://www.youtube.com/embed/sH4bi60alZU?controls=0&rel=0' allowfullscreen></iframe></div>");
    }
+    $("resultBody").append("<div id=\"ytWidget2\" class=\"float-right\"><script src=\"https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget2&pageLang=en&widgetTheme=dark&autoMode=true\" type=\"text/javascript\"></script>");
     $('#result').addClass('show')
   }
 
